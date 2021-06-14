@@ -1,8 +1,8 @@
 # BUDGEThub
 
-A simple - developed using React, Node, Express and MongoDB. 
+BUDGEThub is an online comparison platform for finding the best credit card and banks to open a new account.  - developed using React, Node, Express and MongoDB. 
 
-![Eco Products Journal]
+![BUDGEThub]
 
 #### What you need to run this code
 1. Node (13.12.0)
