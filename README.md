@@ -1,6 +1,6 @@
-# Eco Products Journal
+# BUDGEThub
 
-A simple social media application with users, posts, likes and comments - developed using React, Node, Express and MongoDB. 
+A simple - developed using React, Node, Express and MongoDB. 
 
 ![Eco Products Journal]
 
