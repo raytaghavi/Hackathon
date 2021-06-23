@@ -1,8 +1,8 @@
 # Eco Products Journal
 
-A simple social media application with users, posts, likes and comments - developed using React, Node, Express and MongoDB. 
+BUDGEThub is an online comparison platform for finding the best credit card and banks to open a new account - developed using React, Node, Express and MongoDB. 
 
-![Eco Products Journal]
+![BudgetHub]
 
 #### What you need to run this code
 1. Node (13.12.0)
