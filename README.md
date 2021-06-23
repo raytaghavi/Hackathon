@@ -1,4 +1,4 @@
-# Eco Products Journal
+# BudgetHub - A Hackathon Project
 
 BUDGEThub is an online comparison platform for finding the best credit card and banks to open a new account - developed using React, Node, Express and MongoDB. 
 
