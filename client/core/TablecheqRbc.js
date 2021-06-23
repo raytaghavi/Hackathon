@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from '@material-ui/core';
 import TabackgroundImg from './../assets/images/moneyback.jpg';
-import tdc1 from './../assets/images/allInclusiveChequing-Account.svg';
+import tdc1 from './../assets/images/allInclusiveChequing-AccountRBC.png';
 //import tdc1 from './../assets/images/TDAeroplanVisaInfiniteCard.jpg';
-import tdc2 from './../assets/images/unlimitedChequing-Account.svg';
-import tdc3 from './../assets/images/everydayChequing-Account.svg';
-import tdc4 from './../assets/images/minimumChequing-Account.svg';
-import tdc5 from './../assets/images/studentAccount.svg';
-import TDMapImage from './../assets/images/TDMap.png'
+import tdc2 from './../assets/images/unlimitedChequing-AccountRBC.png';
+import tdc3 from './../assets/images/everydayChequing-AccountRBC.png';
+import tdc4 from './../assets/images/minimumChequing-AccountRBC.png';
+import tdc5 from './../assets/images/studentAccountRBC.png';
+import RBCMapImage from './../assets/images/RBCMap.png'
 import Image from "material-ui-image";
 
 const useStyles = makeStyles({
@@ -45,7 +45,7 @@ const useStyles = makeStyles({
     table: { textAlign: 'left' },
     media: {
         display: 'block',
-        width: 130,
+        width: 80,
         objectFit: 'contain',
         marginInline: 'auto'
     }
@@ -145,7 +145,7 @@ export default function BasicTable() {
                     </TableBody>
                 </Table>
             </TableContainer>
-            <img src={TDMapImage} alt="td map" className={classes.mapImg} />
+            <img src={RBCMapImage} alt="rbc map" className={classes.mapImg} />
         </div>
     );
 }

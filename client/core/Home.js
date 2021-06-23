@@ -167,16 +167,16 @@ export default function Home({ history }) {
               <div className={classes.servicesContainer}>
                 <Card
                   className={`${classes.service} ${active === 'new' ? classes.active : undefined}`}
-                  //onClick={() => setActive('new')}
-                  onClick={() => history.push(`/tablecheq`)}
+                  onClick={() => setActive('new')}
+                // onClick={() => history.push(`/tablecheq`)}
                 >
                   <AccountBalance />
                   <Typography className={classes.serviceName}>New Bank Account</Typography>
                 </Card>
                 <Card
                   className={`${classes.service} ${active === 'card' ? classes.active : undefined}`}
-                  //onClick={() => setActive('card')}
-                  onClick={() => history.push(`/table`)}
+                  onClick={() => setActive('card')}
+                //onClick={() => history.push(`/table`)}
                 >
                   <CreditCard />
                   <Typography className={classes.serviceName}>Credit Card</Typography>
@@ -187,7 +187,10 @@ export default function Home({ history }) {
                   <Card
                     key={bank.id}
                     className={classes.bank}
-                    onClick={() => history.push(`/tablecheq?bank=${bank.id}`)}                  >
+                    //onClick={() => history.push(`/tablecheq?bank=${bank.id}`)}
+                    //onClick={() => history.push(active === 'card' ? '/table' : '/tablecheq')}
+                    onClick={() => history.push(active === 'card' ? (bank.id === 1 ? '/tableRbc' : '/table') : (bank.id === 1 ? '/tablecheqRbc' : '/tablecheq'))}
+                  >
                     <img className={classes.boxImg} src={bank.logo} />
                     <Typography>{bank.name}</Typography>
                   </Card>
@@ -198,7 +201,8 @@ export default function Home({ history }) {
           </Grid>
         </Grid>
       }
-      {defaultPage &&
+      {
+        defaultPage &&
         <Grid container spacing={8}>
           <Grid item xs={8} sm={7}>
             <Newsfeed />
@@ -208,6 +212,6 @@ export default function Home({ history }) {
           </Grid>
         </Grid>
       }
-    </div>
+    </div >
   )
 }
